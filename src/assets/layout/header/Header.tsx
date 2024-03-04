@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Header = () => {
     return (
-        <header>
+        <StyledHeader>
             <a href="">
                 <img src="" alt=""/>
 
@@ -27,7 +27,7 @@ export const Header = () => {
                 </li>
             </ul>
 
-        </header>
+        </StyledHeader>
     );
 };
 
