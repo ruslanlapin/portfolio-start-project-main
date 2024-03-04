@@ -1,37 +1,19 @@
 import React from 'react';
 import styled from "styled-components";
+import {Logo} from "../../../components/logo/Logo";
+import {Menu} from "../../../components/menu/Menu";
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <a href="">
-                <img src="" alt=""/>
-
-            </a>
-
-            <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Skills</a>
-                </li>
-                <li>
-                    <a href="">Works</a>
-                </li>
-                <li>
-                    <a href="">Testimony</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-            </ul>
+            <Logo/>
+            <Menu/>
 
         </StyledHeader>
     );
 };
 
-const StyledHeader = styled.header `
+const StyledHeader = styled.header`
     background-color: darkseagreen;
 `
 
