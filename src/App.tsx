@@ -4,6 +4,7 @@ import {Header} from "./assets/layout/header/Header";
 import {Main} from "./assets/layout/section/main/Main";
 import {Skills} from "./assets/layout/section/skills/Skills";
 import {Works} from "./assets/layout/section/works/Works";
+import {Testimony} from "./assets/layout/section/testimony/Testimony";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
             <Main/>
             <Skills/>
             <Works/>
+            <Testimony/>
         </div>
     );
 }
