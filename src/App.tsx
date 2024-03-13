@@ -7,6 +7,7 @@ import {Works} from "./assets/layout/section/works/Works";
 import {Testimony} from "./assets/layout/section/testimony/Testimony";
 import {Contacts} from "./assets/layout/section/contacts/Contacts";
 import {Slogan} from "./assets/layout/section/slogan/Slogan";
+import {Footer} from "./assets/layout/footer/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Testimony/>
             <Contacts/>
             <Slogan/>
+            <Footer/>
         </div>
     );
 }
