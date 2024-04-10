@@ -3,6 +3,7 @@ import styled from "styled-components";
 import photo from '../../../assets/images/foto.jpg';
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme";
 
 export const Main = () => {
     return (
@@ -11,7 +12,7 @@ export const Main = () => {
                 <FlexWrapper align={"center"} justify={"space-between"}>
                     <div>
                         <SmallText>Hi There</SmallText>
-                        <Name>I am Ruslan Lapin</Name>
+                        <Name>I am <span>Ruslan Lapin</span></Name>
                         <MainTitle>A Web Developer. </MainTitle>
                     </div>
 
@@ -47,6 +48,22 @@ const Name = styled.h2`
     letter-spacing: 5%;
     margin: 10px 0px;
    
+    span {
+        position: relative;
+        z-index: 0;
+        
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 20px;
+            background-color: ${theme.colors.accent};
+            
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
 `
 
 const SmallText = styled.h2`
