@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
         color: ${theme.colors.font};
+        cursor: pointer;
     }
 
     ul {
@@ -47,7 +48,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     section:nth-of-type(even) {
-        background-color: ${theme.colors.secondary};
+        background-color: ${theme.colors.secondaryBg};
     }
 
     h3 {

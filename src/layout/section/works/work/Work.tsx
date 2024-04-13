@@ -31,7 +31,7 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-    background-color: ${theme.colors.secondary};
+    background-color: ${theme.colors.secondaryBg};
     max-width: 540px;
     width: 100%;
     
